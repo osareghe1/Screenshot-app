@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Screenshot Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="input-form">
+      <h2>Generate Payment Screenshot</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter name">
+      
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+
+      <label for="upi-id">UPI ID:</label>
+      <input type="text" id="upi-id" placeholder="Enter UPI ID">
+
+      <label for="date">Date & Time:</label>
+      <input type="datetime-local" id="date">
+
+      <label for="transaction-id">Transaction ID:</label>
+      <input type="text" id="transaction-id" placeholder="Enter transaction ID">
+
+      <button type="button" id="generate-btn">Generate</button>
+    </form>
+
+    <div id="screenshot-preview">
+      <div class="payment-card">
+        <div class="checkmark">✔</div>
+        <h1 id="preview-amount">₹0.00</h1>
+        <p id="preview-name">Paid to [Name]</p>
+        <p id="preview-upi-id">[UPI ID]</p>
+        <p id="preview-date">[Date]</p>
+        <p id="preview-transaction-id">Transaction ID: [ID]</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
